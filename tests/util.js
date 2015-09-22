@@ -357,7 +357,6 @@ exports.setupPreConditions = function (state, testData, done) {
     account.balance = format(acctData.balance)
 
     var codeBuf = new Buffer(acctData.code.slice(2), 'hex')
-    console.log('POPULATE')
     var storageTrie = state.copy()
     storageTrie.root = null
 
